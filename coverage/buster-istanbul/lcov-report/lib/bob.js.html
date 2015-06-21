@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for lib/bob.js</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../prettify.css">
+    <link rel="stylesheet" href="../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header high">
+    <h1>Code coverage report for <span class="entity">lib/bob.js</span></h1>
+    <h2>
+        Statements: <span class="metric">100% <small>(52 / 52)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">100% <small>(14 / 14)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">100% <small>(18 / 18)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">100% <small>(49 / 49)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../index.html">All files</a> &#187; <a href="index.html">lib/</a> &#187; bob.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132</td><td class="line-coverage"><span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">12</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-yes">6</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span></td><td class="text"><pre class="prettyprint lang-js">var async = require('async'),
+  config = require('./config'),
+  deps = require('./deps'),
+  jazz = require('jazz'),
+  p = require('path'),
+  runner = require('./runner'),
+  task = require('./task'),
+  util = require('util');
+&nbsp;
+function Bob(opts) {
+  this.opts = opts;
+}
+&nbsp;
+/**
+ * Bob is goin' to work!
+ * Execute specified tasks 
+ *
+ * @param {Array} taskNames: an array of task names
+ * @param {Function} cb: standard cb(err, result) callback
+ */
+Bob.prototype.build = function (taskNames, cb) {
+  const EXEC_OPTS = {
+    cwd: this.opts.appDir,
+    quiet: this.opts.quiet
+  };
+  var self = this;
+&nbsp;
+  this._init(taskNames, function (err, settings) {
+    if (err) { cb(err); } else {
+      self._commands(taskNames, settings, function (err, commands) {
+        if (err) { cb(err); } else {
+          runner.execSeries(commands, EXEC_OPTS, cb);
+        }
+      });
+    }
+  });
+};
+&nbsp;
+/**
+ * Load Bob task files and application config file, and install optional dependencies, all in parallel.
+ *
+ * @param {Array} taskNames: an array of task names
+ * @param {Function} cb: standard cb(err, result) callback
+ */
+Bob.prototype._init = function (taskNames, cb) {
+  var self = this;
+&nbsp;
+  function loadTask(cb) {
+    task.load(taskNames, p.join(self.opts.bobDir, 'conf', 'tasks'), cb);
+  }
+  function loadConfig(cb) {
+    config.load(taskNames, self.opts.appDir, cb);
+  }
+  function installDeps(err, settings) {
+    if (err) { cb(err); } else {
+      var taskTypeNames = [];
+      taskNames.forEach(function (taskName) {
+        taskTypeNames = taskTypeNames.concat(self._taskTypeNames(taskName, settings));
+      });
+      deps.install(taskTypeNames, { dir: self.opts.bobDir }, function (err) {
+        cb(err, settings);
+      });
+    }
+  }
+  async.parallel({ bobTasks: loadTask, appConfig: loadConfig }, installDeps);
+};
+&nbsp;
+/**
+ * Prepare commands to execute.
+ *
+ * @param {Array} taskNames: an array of task names
+ * @param {Object} settings: tasks and application configs 
+ * @param {Function} cb: standard cb(err, result) callback
+ */
+Bob.prototype._commands = function (taskNames, settings, cb) {
+  const TPL_PARAMS = {
+    app: this.opts.appDir,
+    bob: this.opts.bobDir,
+    name: this.opts.appName,
+    tmp: this.opts.tmpDir,
+    version: this.opts.appVersion
+  };
+  var bobTasks = settings.bobTasks,
+    bobMode = this.opts.bobMode,
+    commands = [],
+    self = this;
+&nbsp;
+  taskNames.forEach(function (taskName) {
+&nbsp;
+    self._taskTypeNames(taskName, settings).forEach(function (taskTypeName) {
+      var taskType = bobTasks[taskName].types[taskTypeName];
+      Object.keys(taskType).forEach(function (key) {
+        if (typeof taskType[key] === 'object') {
+          taskType[key] = taskType[key][bobMode];
+        }
+      });
+      commands.push({
+        format: util.format('%s %s %s', taskType.bin, taskType.opts, taskType.args),
+        meta: {
+          task: taskName,
+          type: taskTypeName
+        }
+      });
+    });
+  });
+&nbsp;
+  var jobs = [];
+  commands.forEach(function (command) {
+    jobs.push(function (cb) {
+      jazz.compile(command.format).process(TPL_PARAMS, function (result) {
+        command.exec = result;
+        delete command.format;
+        cb(null, command);
+      });
+    });
+  });
+  async.parallel(jobs, cb);
+};
+&nbsp;
+Bob.prototype._taskTypeNames = function (taskName, settings) {
+  // NOTE: allow multiple types in application config
+  var taskTypeNames =
+    (settings.appConfig[taskName] &amp;&amp; settings.appConfig[taskName].type) ?
+    settings.appConfig[taskName].type :
+    settings.bobTasks[taskName].default;
+  if (!Array.isArray(taskTypeNames)) {
+    taskTypeNames = [taskTypeNames];
+  }
+  return taskTypeNames;
+};
+&nbsp;
+module.exports = Bob;</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sun Jun 21 2015 12:42:22 GMT+1000 (AEST)</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+[ 'lib/bob.js',
+  'lib/cli.js',
+  'lib/config.js',
+  'lib/deps.js',
+  'lib/runner.js',
+  'lib/task.js' ]
